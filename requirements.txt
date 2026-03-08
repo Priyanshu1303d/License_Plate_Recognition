@@ -1,0 +1,29 @@
+ultralytics==8.3.0
+opencv-python
+numpy
+pandas
+matplotlib
+easyocr
+pillow
+scikit-learn
+tqdm
+
+# API
+fastapi
+uvicorn
+
+# App
+streamlit
+
+# Experiment tracking
+mlflow
+
+# Utilities
+python-dotenv
+pyyaml
+
+# Dev
+pytest
+ipykernel
+
+-e .
