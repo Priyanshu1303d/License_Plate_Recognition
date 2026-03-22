@@ -1,14 +1,13 @@
 import cv2
 import numpy as np
 import re
-from src.license_plate_detection.ocr.plate_reader import Plate_Reader
 
 
 class Plate_Preprocessing:
-    def __init__(self):
-        self.reader = Plate_Reader()
-        self.plate_pattern = self.reader.plate_pattern()
-        self.correct_plate_format = self.reader.correct_plate_format(ocr_text)
+    def __init__(self, plate_reader , plate_pattern, correct_plate_format):
+        self.reader = plate_reader
+        self.plate_pattern = plate_pattern
+        self.correct_plate_format = correct_plate_format
 
     def recognize_plate(plate_crop):
         if plate_crop.size == 0:
